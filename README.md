@@ -53,20 +53,23 @@ http://localhost:3000/api-docs
 
 ## Эндпоинты
 
-GET /api/currencies Список поддерживаемых валют (кэш 1 час)
-GET /api/rates?base=USD&targets=EUR,GBP Курсы валют (кэширование 24 часа в БД + 5 минут в памяти)
-GET /api/user Настройки текущего пользователя
-POST /api/user Обновление настроек (или создание, если пользователя ещё нет)
+- GET /api/currencies Список поддерживаемых валют (кэш 1 час)
+- GET /api/rates?base=USD&targets=EUR,GBP Курсы валют (кэширование 24 часа в БД + 5 минут в памяти)
+- GET /api/user Настройки текущего пользователя
+- POST /api/user Обновление настроек (или создание, если пользователя ещё нет)
 
 ## Структура проекта
 
+```
 src/
-├── controllers/ # обработчики запросов
-├── routes/ # маршруты
-├── middleware/ # middleware (аутентификация)
-├── utils/ # утилиты (supabase клиент, кэш)
-├── config/ # конфигурация (Swagger)
-└── server.ts # точка входа
+├── controllers/      # обработчики запросов
+├── routes/           # маршруты
+├── middleware/       # middleware (cookie, auth)
+├── services/         # бизнес-логика (rates, user)
+├── utils/            # supabase клиент, кэш
+├── config/           # конфигурация (Swagger)
+└── server.ts         # точка входа
+```
 
 ## Переменные окружения
 
