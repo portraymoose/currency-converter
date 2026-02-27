@@ -16,17 +16,16 @@
 
 1. Клонировать репозиторий:
 
-   ```bash
-   git clone <url>
-   cd currency-converter
-
-   ```
+```bash
+git clone <url>
+cd currency-converter
+```
 
 2. Установить зависимости:
 
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 
 3. Создать файл .env на основе .env.example и заполнить своими данными:
    OPEN_EXCHANGE_API_KEY — ключ от Open Exchange Rates
@@ -34,9 +33,9 @@
 
 4. Запустить в режиме разработки:
 
-   ```bash
-   npm run dev
-   ```
+```bash
+npm run dev
+```
 
 Или скомпилировать и запустить:
 
@@ -86,8 +85,8 @@ npm run lint
 
 Автоформатирование:
 
-```run format
-
+```bash
+npm run format
 ```
 
 ## Демонстрация работы
