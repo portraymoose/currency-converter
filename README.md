@@ -39,10 +39,11 @@
    ```
 
 Или скомпилировать и запустить:
-`bash
-    npm run build
-    npm start
-    `
+
+```bash
+npm run build
+npm start
+```
 
 Сервер будет доступен по адресу http://localhost:3000
 
@@ -78,12 +79,16 @@ src/
 ## Линтинг и форматирование
 
 Проверка кода:
-`bash
-    npm run lint
-    `
+
+```bash
+npm run lint
+```
+
 Автоформатирование:
-`      run format
-    `
+
+```run format
+
+```
 
 ## Демонстрация работы
 
